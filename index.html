@@ -32,25 +32,35 @@
       </div>
     <form class="col s12">
       <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
+        <div class="input-field col s4">
+          <input placeholder="McLovin" id="name" type="text" class="validate">
+          <label for="name">Name</label>
         </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
+        <div class="input-field col s4">
+          <input placeholder="Email" id="email" type="text" class="validate">
+          <label for="email">Email Address</label>
         </div>
+        <div class="input-field col s4">
+            <input placeholder="00001" id="zip" type="text" class="validate">
+            <label for="zip">Zip Code</label>
+          </div>
       </div>
 
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-
+      
     </form>
   </div>
+  
+  <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea placeholder="I want the AC/DC Logo, but with A/Phi"id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1">Describe Your Design</label>
+          </div>
+        </div>
+      </form>
+    </div>
+          
 
 
     <div class="row center">
@@ -60,24 +70,79 @@
         <ul class="collapsible" data-collapsible="accordion">
           <li>
             <div class="collapsible-header"><i class="material-icons">filter_drama</i>Tee Shirts</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="collapsible-body">
+              <div class="row">
+                <div class="col s6">
+                    <h5>SS TEE</h5>
+                    <p style="font-size: 12px; margin-top:-5px">Short Sleeve Tee</p>
+                    <select id="question4">
+                      <option value="" disabled selected>Select Brand</option>
+                      <option value="1">Hanes</option>
+                      <option value="1">Comfort Colors</option>
+                      <option value="1">Port and Company</option>
+                      
+                    </select>
+                </div>
+                <div class="col s6">
+                    <h5>LS TEE</h5>
+                    <p style="font-size: 12px; margin-top:-5px">Long Sleeve Tee</p>
+                    <select id="question4">
+                      <option value="" disabled selected>Select Brand</option>
+                      <option value="1">Hanes</option>
+                      <option value="1">Comfort Colors</option>
+                      <option value="1">Port and Company</option>
+                    </select>
+                </div>
+  							
+  						</div>
+            </div>
           </li>
           <li>
             <div class="collapsible-header"><i class="material-icons">place</i>Hats</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="collapsible-body">
+                <div class="row">
+                    <div class="col s12">
+                        <h5>Dad Hat</h5>
+                        <p style="font-size: 12px; margin-top:-5px">Embroidered Dad Hat</p>
+                        <select id="question4">
+                          <option value="" disabled selected>Select Brand</option>
+                          <option value="1">'47</option>
+                          <option value="1">San Mar</option>
+                          <option value="1">Agusta Caps</option>
+                          
+                        </select>
+                    </div>
+                    
+                  </div>
+            </div>
           </li>
           <li>
             <div class="collapsible-header"><i class="material-icons">whatshot</i>Swimsuit</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            <div class="collapsible-body">
+                <div class="row">
+                    <div class="col s12">
+                        <h5>Revival</h5>
+                        <p style="font-size: 12px; margin-top:-5px">Waterproof logo on One Piece Swimsuit</p>
+                        <select id="question4">
+                          <option value="" disabled selected>Select Brand</option>
+                          <option value="1">Kalve</option>
+                          <option value="1">AliXpress</option>
+                        </select>
+                    </div>
+                    
+                  </div>
+            </div>
           </li>
-          <li>
-            <div class="collapsible-header"><i class="material-icons">whatshot</i>Jackets</div>
-            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-          </li>
+          
         </ul>
 
 
       </div>
+      <div>
+          <button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit Request For Proof
+            <i class="material-icons right">arrow_upward</i>
+          </button>
+        </div>
       <div class="col s12">
 
         <div class="fixed-action-btn click-to-toggle">
@@ -109,6 +174,14 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+  $(document).ready(function() {
+      console.log("up");
+      $('select').material_select();
+
+      $
+  });
+  </script>
 </body>
 
 </html>

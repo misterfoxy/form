@@ -43,6 +43,7 @@ router.post('/register', function(req, res) {
     //execute the models 'create user' function,
     User.createUser(newUser, function(err, user) {
       if (err) throw err;
+      
       // log user information to terminal
       console.log(user);
     });
@@ -91,7 +92,7 @@ passport.deserializeUser(function(id, done) {
   });
 });
 
-//on post to login, run the local passport authenticate method 
+//on post to login, run the local passport authenticate method
 router.post('/login', passport.authenticate('local', {
   successRedirect: '/',
   failureRedirect: '/users/login',

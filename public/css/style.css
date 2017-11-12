@@ -89,3 +89,29 @@ li {
 footer {
   margin-top: 40px;
 }
+
+#userRequestForm{
+  margin-top: 30px;
+}
+
+div.justified {
+        display: flex;
+        justify-content: center;
+    }
+
+textarea{
+
+  border: 5px solid white;
+  border-radius: 2.5px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+form{
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  background-color: #42d1f4;
+  border:7.5px solid black;
+  border-radius: 7.5px;
+}

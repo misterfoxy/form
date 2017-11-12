@@ -11,7 +11,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const mongo = require('mongodb');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/loginapp');
+mongoose.connect('mongodb://localhost/kalve');
 const db = mongoose.connection;
 
 const routes = require('./routes/index');

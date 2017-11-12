@@ -11,11 +11,14 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const mongo = require('mongodb');
 const mongoose = require('mongoose');
+
+// create noSQL database named KALVE at localhost
 mongoose.connect('mongodb://localhost/kalve');
 const db = mongoose.connection;
 
 const routes = require('./routes/index');
 const users = require('./routes/users');
+const orders = require('./routes/orders')
 
 // INIT SERVER
 
@@ -78,6 +81,8 @@ app.use(function(req, res, next){
 app.use('/', routes);
 // attach users controller for model manipulation
 app.use('/users', users);
+
+app.use('/order', orders);
 
 const PORT = 3030 || process.env.PORT;
 

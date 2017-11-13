@@ -1,12 +1,35 @@
 <h2 class="page-header">Dashboard</h2>
-<p>Welcome to Login App</p>
+
 {{#if user}}
 
-  <div class="card">
-    <div class="card-block">
-      <a href="/order">Create New Order</a>
+
+<div class="row">
+
+  <div class="col-lg-6">
+      <a href="/order">
+    <div class="card card-cascade">
+      <p>{{User}}</p>
+      <!--Card image-->
+      <div class="view gradient-card-header blue-gradient">
+        <h2 class="h2-responsive">Create New Order</h2>
+
+
+      </div>
+      <!--/Card image-->
+
+      <!--Card content-->
+      <div class="card-body text-center">
+
+
+      </div>
+      <!--/.Card content-->
+
     </div>
+    </a>
   </div>
 
 
+</div>
+{{else}}
+  <p>Login <a href="/users/login">here</a></p>
 {{/if}}

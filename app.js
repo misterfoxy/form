@@ -18,7 +18,7 @@ const db = mongoose.connection;
 
 const routes = require('./routes/index');
 const users = require('./routes/users');
-const order = require('./routes/order')
+const order = require('./routes/order');
 
 // INIT SERVER
 

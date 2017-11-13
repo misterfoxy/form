@@ -18,7 +18,7 @@ const db = mongoose.connection;
 
 const routes = require('./routes/index');
 const users = require('./routes/users');
-const orders = require('./routes/orders')
+const order = require('./routes/order')
 
 // INIT SERVER
 
@@ -82,7 +82,7 @@ app.use('/', routes);
 // attach users controller for model manipulation
 app.use('/users', users);
 
-app.use('/order', orders);
+app.use('/order', order);
 
 const PORT = 3030 || process.env.PORT;
 

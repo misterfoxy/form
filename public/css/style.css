@@ -97,9 +97,25 @@ footer {
 .card{
   border: 5px solid #444;
   padding: 20px 20px 20px 20px;
-  margin: 20px 20px 0 20px;
+  margin: 20px 15px 0 15px;
 }
 
-.card-block a{
+/*.card-block a{
   margin: 5px 0 5px 0;
+}*/
+
+#revivalCard{
+  background-color: yellow;
+}
+
+#categoryHat{
+background: linear-gradient(to left, #e5e530, #e5ab30);
+}
+
+#categoryTee{
+background: linear-gradient(to left, #ed7dba, #b97ded);
+}
+
+#categorySwim{
+  background: linear-gradient(to left, #5eb1f9, #64e5d2);
 }

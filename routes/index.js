@@ -8,6 +8,6 @@ router.get('/', function(req, res){
 
 router.get('/order', function(req,res){
   res.render('order');
-})
+});
 
 module.exports = router;

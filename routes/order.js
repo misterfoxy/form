@@ -22,6 +22,10 @@ router.get('/REVIVAL', function(req, res){
   res.render('REVIVAL');
 });
 
+router.get('/LSTEE/select', function(req,res){
+  res.render('SELECT');
+});
+
 
 
 module.exports = router;
